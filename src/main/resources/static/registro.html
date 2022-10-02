@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CinePlus</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="header">
+
+            <nav class="nav">
+                <a href="index.html" class="nav-link logo">CinePlus</a> 
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="terror.html">&LeftTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="accion.html">&RightTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="accion.html">Accion</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="ciencia_ficcion.html">Sci-Fi</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="comedia.html">Comedia</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="drama.html">Drama</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="romance.html">Romance</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="suspenso.html">Suspenso</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="terror.html">Terror</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="registro.html">Registro</a></li>
+
+                </ul>
+
+            </nav>
+        </header>
+
+        <section>
+            <h2> Registrese aqui</h2>
+            <h3>Informacion de registro</h3>
+            <form action="registro.jsp" method="POST">
+                <input type="hidden" name="idCliente" value="123456789">
+                <label>Nombre Completo: </label>
+                <input type="text" 
+                       name="nombre" 
+                       placeholder="Apellido1 Apellido2 Nombre"/>
+                <br/>
+                <label>Correo: </label>
+                <input type="email" 
+                       name="correo" 
+                       placeholder="juan@gmail.com"/>
+                <br/>
+                <label>Fecha de registro: </label>
+                <input type="date" 
+                       name="fecha"/>
+                <br/>
+                <label>Hora de registro: </label>
+                <input type="time" 
+                       name="hora"/>
+                <br/>
+                <label>Edad: </label>
+                <input type="number" 
+                       name="edad" min="18" max="35"/>
+                <br/>
+                <label>Categoria preferida: </label>
+                Terror <input type="radio" name="pelicula" value="terror"/>
+                Comedia <input type="radio" name="pelicula"  value="comedia"/>
+                Romance <input type="radio" name="pelicula" value="romance"/>
+                Otro <input type="text" name="categoria" placeholder="Accion, Drama, etc."/>
+                <br/>
+                <label>Clave de Ingreso: </label>
+                <input type="password" name="clave"/>
+                <br/>
+
+                <input type="submit" name="enviar" value="Registrar"/>
+
+            </form>
+            <br>
+
+            <h3>Encuentranos</h3>
+            <article><h3>Google Map (CinePlus)</h3>      
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.8797310197106!2d-84.15484138032865!3d9.943963670146777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fb698e1ba15b%3A0x781267d196d66afc!2sMultiplaza!5e0!3m2!1ses!2scr!4v1664667509181!5m2!1ses!2scr" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" allowfullscreen="" 
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+
+
+        </section>
+        <footer>
+            <h3>&Ll; Practica semana 3 &Gg;</h3>
+        </footer>
+    </body>
+</html>
